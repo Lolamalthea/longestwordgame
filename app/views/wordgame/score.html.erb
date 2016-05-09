@@ -1,0 +1,18 @@
+<h1>******** Now your result ********</h1>
+
+<p><%= @grid %></p>
+<p>Your word: <%= @answer %></p>
+<p>Translation: <%= @translation %></p>
+<p>Score: <%= @score %></p>
+<p>Time to answer: <%= @time %></p>
+<p>Message: <%= @message %></p>
+
+result = run_game(attempt, grid, start_time, end_time)
+
+puts "Your word: #{attempt}"
+puts "Time Taken to answer: #{result[:time]}"
+puts "Translation: #{result[:translation]}"
+puts "Your score: #{result[:score]}"
+puts "Message: #{result[:message]}"
+
+puts "*****************************************************"
